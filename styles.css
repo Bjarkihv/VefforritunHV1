@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* setjum box-sizing: border-box; á allt */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+html {
+  /* stylelint-disable-line */
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: Lato, helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+  @media (min-width: 1200px) {
+    html {
+      margin: 0; } }
+
+img {
+  /* stylelint-disable-line */
+  max-width: 100%; }
+svg {
+  /* stylelint-disable-line */
+  max-width: 100%; }
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px; }
+  .col-12 {
+    width: 100%;
+    width: 100%; }
+  .col .offset-3 {
+    margin-left: 25%; }
+  .col .offset-4 {
+    margin-left: 33.333%; }
+  @media (max-width: 599px) {
+    .col-sm-12 {
+      width: 100%; }
+    .col-sm-6 {
+      width: 50%; }
+    .col-sm-3 {
+      width: 25%; }
+    .col-sm-0 {
+      margin-left: 0; } }
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.nopad {
+  padding: 0; }
+
+.col-6 {
+  width: 50%; }
+
+.col-8 {
+  width: 66.666%; }
+
+.col-4 {
+  width: 33.333%; }
+
+.header {
+  margin: auto;
+  max-width: 1200px;
+  height: 45em;
+  margin-bottom: 4em;
+  padding-top: 17em;
+  background: transparent url(bg.jpg) no-repeat fixed 50% 0%;
+  background-size: 1200px;
+  text-align: center; }
+
+.heading {
+  width: 100%;
+  padding: 10px;
+  font-family: Merriweather, georgia, serif;
+  font-size: 2rem; }
+  .heading--one {
+    font-size: 3rem; }
+  .heading--two {
+    font-size: 2rem; }
+  .heading--three {
+    font-size: 1rem; }
+
+.text__p {
+  white-space: pre-line; }
+
+.button {
+  display: inline-block;
+  width: 100%;
+  max-width: 128px;
+  padding: 10px 5px;
+  margin: 0;
+  overflow: hidden;
+  font-family: Lato, helvetica, arial, sans-serif;
+  font-size: 2rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 3px;
+  transition: background-color 500ms ease; }
+  .button:hover {
+    color: #eee;
+    background-color: #333; }
+  .button--inverted {
+    color: #666;
+    background-color: #eee; }
+  .button--inverted:hover {
+    color: #333;
+    background-color: #ccc; }
+  .button--disabled, .button--disabled:hover {
+    color: #999;
+    background-color: #eee;
+    border-color: #eee; }
+
+.card {
+  width: 100%;
+  min-width: 200px;
+  max-width: 800px;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #eee;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color 500ms ease; }
+  @media (min-width: 800px) {
+    .card {
+      display: flex; } }
+  .card__heading {
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: Merriweather, georgia, serif;
+    font-size: 1.5rem;
+    word-break: break-word; }
+  .card__content {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 800px) {
+      .card__content {
+        align-items: flex-start; } }
+  .card__text {
+    margin-bottom: 30px; }
+  .card__img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 100%; }
+    @media (min-width: 800px) {
+      .card__img {
+        min-width: 400px;
+        height: 100%;
+        object-fit: cover; } }
+
+.card:hover {
+  background-color: #ddd; }
+
+.cardlist__row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
+.cardlist__col:nth-child(2n+1) {
+  padding: 10px; }
+
+.cardlist__col:nth-child(2n) {
+  padding: 10px; }
+
+.cardlist .card {
+  flex-direction: column; }
+
+.cardlist .button {
+  margin: auto; }
+
+@media (min-width: 600px) {
+  .cardlist__col {
+    width: 100%;
+    max-width: 50%; } }
