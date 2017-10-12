@@ -41,22 +41,24 @@ main {
   margin-bottom: 20px;
   margin-left: -10px; }
 
+.nomarg {
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px; }
+
+.bottommarg {
+  margin-bottom: 10em; }
+
+.centered {
+  display: flex;
+  justify-content: center; }
+
 .col {
   padding-right: 10px;
   padding-left: 10px; }
   .col-12 {
     width: 100%;
     width: 100%; }
-  .col .src {
-    margin-top: 0.6em;
-    width: 2em;
-    height: 1em;
-    float: left; }
-  .col .circle {
-    /* stylelint-disable-line */
-    width: 85%;
-    border-radius: 13em;
-    margin: 10em 0em -1em 2em; }
   .col .offset-3 {
     margin-left: 25%; }
   .col .offset-4 {
@@ -64,10 +66,18 @@ main {
   @media (max-width: 599px) {
     .col-sm-12 {
       width: 100%; }
+    .col-sm-8 {
+      width: 66.666%; }
     .col-sm-6 {
       width: 50%; }
+    .col-sm-4 {
+      width: 33.333%;
+      margin-left: 6.2em;
+      margin-right: 6.5em; }
     .col-sm-3 {
       width: 25%; }
+    .col-sm-1 {
+      width: 16.666%; }
     .col-sm-0 {
       margin-left: 0; } }
 
@@ -94,6 +104,18 @@ main {
   width: 16.666%;
   margin-left: 6.2em;
   margin-right: 6.5em; }
+
+.src {
+  margin-top: 0.6em;
+  width: 2em;
+  height: 1em;
+  float: left; }
+
+.circle {
+  /* stylelint-disable-line */
+  width: 85%;
+  border-radius: 13em;
+  margin: 10em 0em -1em 2em; }
 
 .header {
   margin: auto;
@@ -122,6 +144,10 @@ main {
     font-size: 1.48rem;
     text-align: center;
     font-style: italic; }
+  .heading--five {
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center; }
 
 .text__p {
   font-size: 1.2em;
@@ -170,6 +196,9 @@ main {
     color: #999;
     background-color: #eee;
     border-color: #eee; }
+
+.long {
+  max-width: 256px; }
 
 .card {
   width: 100%;
