@@ -27,9 +27,6 @@ html {
 img {
   /* stylelint-disable-line */
   max-width: 100%; }
-svg {
-  /* stylelint-disable-line */
-  max-width: 100%; }
 
 main {
   /* stylelint-disable-line */
@@ -50,6 +47,16 @@ main {
   .col-12 {
     width: 100%;
     width: 100%; }
+  .col .src {
+    margin-top: 0.6em;
+    width: 2em;
+    height: 1em;
+    float: left; }
+  .col .circle {
+    /* stylelint-disable-line */
+    width: 85%;
+    border-radius: 13em;
+    margin: 10em 0em -1em 2em; }
   .col .offset-3 {
     margin-left: 25%; }
   .col .offset-4 {
@@ -77,8 +84,16 @@ main {
 .col-8 {
   width: 66.666%; }
 
+.col-3 {
+  width: 25%; }
+
 .col-4 {
   width: 33.333%; }
+
+.col-2 {
+  width: 16.666%;
+  margin-left: 6.2em;
+  margin-right: 6.5em; }
 
 .header {
   margin: auto;
@@ -94,16 +109,34 @@ main {
   width: 100%;
   padding: 10px;
   font-family: Merriweather, georgia, serif;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-bottom: -10px; }
   .heading--one {
     font-size: 3rem; }
   .heading--two {
     font-size: 2rem; }
   .heading--three {
-    font-size: 1rem; }
+    font-size: 1.5rem; }
+  .heading--four {
+    padding: 0;
+    font-size: 1.48rem;
+    text-align: center;
+    font-style: italic; }
 
 .text__p {
-  white-space: pre-line; }
+  font-size: 1.2em;
+  white-space: pre-line;
+  margin-left: 2.5em;
+  margin-bottom: 5em; }
+
+.text__ps {
+  font-size: 1em;
+  text-align: center; }
+
+.text__pb {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center; }
 
 .button {
   display: inline-block;
