@@ -17,7 +17,7 @@ html {
   /* stylelint-disable-line */
   margin-right: 20px;
   margin-left: 20px;
-  font-family: Lato, helvetica, arial, sans-serif;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
@@ -50,7 +50,7 @@ main {
   margin-left: -10px; }
 
 .bottommarg {
-  margin-bottom: 10em; }
+  margin-bottom: 3em; }
 
 .centered {
   display: flex;
@@ -116,25 +116,28 @@ main {
   margin-right: 4em; }
 
 .header {
-  margin: auto;
+  margin-top: -3em;
   max-width: 1200px;
-  height: 45em;
-  margin-bottom: 4em;
+  height: 46em;
+  margin-bottom: 5em;
   padding-top: 17em;
   background: transparent url(bg.jpg) no-repeat fixed 50% 0%;
-  background-size: 1200px;
+  background-size: 77.5em;
   text-align: center; }
 
 .heading {
   width: 100%;
   padding: 10px;
-  font-family: Merriweather, georgia, serif;
+  font-family: 'Roboto Slab', georgia, serif;
   font-size: 2rem;
   margin-bottom: -10px; }
   .heading--one {
-    font-size: 3rem; }
+    margin: -2rem 0 2.5rem 0;
+    font-size: 4.25rem; }
   .heading--two {
-    font-size: 2rem; }
+    padding-top: 0.5em;
+    font-size: 2.1rem;
+    font-weight: unset; }
   .heading--three {
     font-size: 1.5rem; }
   .heading--four {
@@ -144,21 +147,18 @@ main {
   .heading--five {
     padding: 0;
     font-size: 1.5rem; }
-  .heading--placeholder {
-    padding: 0;
-    font-size: 1.5rem;
-    margin-bottom: 5em; }
 
 .aligncenter {
   text-align: center; }
 
 .pushright {
-  margin-left: 1em; }
+  margin-top: 0.2em;
+  margin-left: 1.5em; }
 
 .text__p {
   font-size: 1.2em;
   white-space: pre-line;
-  margin-left: 2.5em;
+  margin-left: 2.5rem;
   margin-bottom: 5em; }
 
 .text__ps {
@@ -196,7 +196,7 @@ main {
   padding: 10px 5px;
   margin: 0;
   overflow: hidden;
-  font-family: Lato, helvetica, arial, sans-serif;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 2rem;
   color: #eee;
   text-align: center;
@@ -244,9 +244,11 @@ main {
   padding: 5px 0 5px 0; }
 
 .long {
-  max-width: 256px; }
+  max-width: 7em;
+  height: 2em; }
 
 .topright {
+  margin-right: 2.5em;
   float: right; }
 
 .card {
@@ -318,20 +320,20 @@ main {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 13em;
+  height: 12.5em;
   margin-top: 3em;
   background-color: #333;
   color: white;
   text-align: center;
-  padding-top: 2em; }
+  padding-top: 1.2em; }
 
 .img {
   max-width: 100%; }
 
 .src {
-  margin-top: 0.6em;
-  width: 2em;
-  height: 1em;
+  margin: 0.7rem 0.5rem 0px 0;
+  width: 2rem;
+  height: 1rem;
   float: left; }
 
 .circle {
@@ -345,7 +347,7 @@ main {
   justify-content: flex-end;
   position: sticky;
   top: 0;
-  height: 2.5em;
+  height: 3em;
   width: 100%;
   background-color: #333;
   color: white;
@@ -360,34 +362,28 @@ a {
   border: 0px;
   cursor: pointer;
   margin: 0px 0.5em 0 0;
-  padding: 0.5em 0px 0px 0.5em;
+  padding: 0.7em 0px 0px 0.5em;
   text-decoration: none; }
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s; }
 
 .fade-in1 {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 1s; }
 
 .fade-in2 {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 2s; }
 
 .fade-in3 {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 3s; }
 
 @keyframes fadeIn {
