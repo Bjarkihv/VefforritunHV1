@@ -8,10 +8,27 @@
   <link rel="stylesheet" href="kaupastyles.css">
   </head>
   <body>
-    <p> Persónuupplýsingar </p>
-    <form>
+  <header>
+    <div>
+      <button class="button button--kaupa">Kaupa</button>
+      <button class="button button--um">Um</button>
+      <p class = "Foo"><strong>Fooþjónustan</strong></p>
+    </div>
+  </header>
+  <main>
+    <div class = "efrihluti">
+    <div class ="prufa">
+      <h1>Kaupa</h1>
+    </div>
+    </div>
+    </div>
+  </main>
 
-    <fieldset>
+    <div class="wrapper">
+      <div class="dalkur a">
+        <p> Persónuupplýsingar </p>
+    <form>
+      <fieldset>
       <label>
         Nafn:
         <br>
@@ -22,32 +39,22 @@
       <label>
         Kennitala:
         <br>
-        <input name="kt" type="kt">
+        <input name="kt" type="kt" placeholder="123456-7890">
         <br>
         <br>
-        Kyn:
+        <form>
+          Kyn:<br>
+          <input type="radio" name="gender" value="male"> Karl<br>
+          <input type="radio" name="gender" value="female"> Kona <br>
+          <input type="radio" name="gender" value="other"> Annað
+        </form>
         <br>
-        <label>
-          <input name="happiness rating" type="radio" value = Karl>
-          Karl
-        </label>
-        <br>
-
-        <label>
-          <input name="happiness rating" type="radio" value = Kona >
-          Kona
-        </label>
-        <br>
-        <label>
-          <input name="happiness rating" type="radio" value = Annað >
-          Annað
-        </label>
         <br>
       </label>
       <label>
         Símanúmer:
         <br>
-        <input name="name" type="text" required>
+        <input name="name" type="text" required placeholder="+354 812 3456">
       </label>
       <br>
       <br>
@@ -63,14 +70,67 @@
         Skrá mig á póstlista
       </label>
     </fieldset>
-    <fieldset>
-      Greiðsluupplýsingar
+    </div>
+
+    <div class="dalkur b">
+      <fieldset>
+      <p>Greiðsluupplýsingar</p>
+      <br>
+      <label for="greidsla">Greiða með:</label>
+      <br>
+      <select id="greidsla">
+        <option>Kreditkorti</option>
+        <option>Millifærslu</option>
+        <option>Reiðufé</option>
+      </select>
+      <br>
+      <label>
+        Nafn á korti:
+        <br>
+        <input name="korthafi" type="text" required>
+        <br>
+      </label>
+      <br>
+      <label>
+          Kortanúmer:
+          <br>
+          <input name="kortanr" type="kortanr" required placeholder="5999-9999-9999-9999">
+          <br>
+      </label>
+      <br>
+      <label for="Gildistími">
+        Gildistími:
+        <br>
+        <label for="mán">Mán</label>
+        <select id="mán">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+        <label for="ár">Ár</label>
+        <select id="ár">
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+
+        </select>
+      </label>
+
     </fieldset>
+    </div>
+    </div>
 
-
-
-
-    <input type="submit" value="Senda">
+    <button class="button button--nedri">Panta</button>
     </form>
     <section class ="yfirfooter">
       <ul class = "leftlist">
