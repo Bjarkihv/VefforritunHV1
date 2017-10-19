@@ -119,6 +119,15 @@ main {
   overflow-x: hidden;
 
 }
+.button--nedri {
+  align-content: center;
+  justify-content: center;
+  margin-left: 450px;
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 70px;
+  margin-top: -10px;
+}
 
 .efrihluti {
   width: 100%;
