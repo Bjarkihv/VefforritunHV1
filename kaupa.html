@@ -30,48 +30,46 @@
           <p> Persónuupplýsingar</p>
           <br>
           <form>
-            <label>
-              Nafn:
+            <h3>Nafn:</h3>
               <br>
               <input name="name" type="text" required>
-            </label>
           </form>
             <br>
-            <br>
-            <label>
-              Kennitala:
+            <h3>Kennitala:</h3>
               <br>
-              <input name="kt" type="kt" placeholder="123456-7890">
+              <input name="kt" type="text" placeholder="123456-7890">
               <br>
               <br>
               <form>
-                Kyn:<br>
-                <input type="radio" name="gender" value="male"> Karl<br>
-                <input type="radio" name="gender" value="female"> Kona <br>
-                <input type="radio" name="gender" value="other"> Annað
-              </form>
+              <h3>Kyn:</h3> <br>
+              <div>
+                <input type="radio" id="Karl"
+                 name="kyn" value="Karl">
+                <label for="Karl">Karl</label> <br>
+
+                <input type="radio" id="Kona"
+                 name="kyn" value="Kona">
+                <label for="Kona">Kona</label> <br>
+
+                <input type="radio" id="Annað"
+                 name="kyn" value="Annað">
+                <label for="Annað">Annað</label>
+              </div>
+
+            </form>
               <br>
               <br>
-            </label>
-            <label>
-              Símanúmer:
-              <br>
+            <h3>Símanúmer:</h3><br>
               <input name="name" type="text" required placeholder="+354 812 3456">
-            </label>
             <br>
             <br>
-            <label>
-              Heimilisfang:
+            <h3>Heimilisfang:</h3>
               <br>
               <input name="name" type="text" required>
-            </label>
             <br>
             <br>
-            <label>
+            <h3>Skrá mig á póstlista</h3>
               <input type="checkbox" checked>
-              Skrá mig á póstlista
-            </label>
-          </fieldset>
           </fieldset>
       </div>
 
@@ -79,33 +77,26 @@
         <fieldset>
           <p>Greiðsluupplýsingar</p>
           <br>
-          <label for="greidsla">Greiða með:</label>
-          <br>
+          <div id="greidsla"><h3>Greiða með:</h3>
           <select id="greidsla">
             <option>Kreditkorti</option>
             <option>Millifærslu</option>
             <option>Reiðufé</option>
           </select>
+          </div>
           <br>
-          <label>
-            Nafn á korti:
-            <br>
+          <br>
+          <h3>Nafn á korti:</h3>
             <input name="korthafi" type="text" required>
             <br>
-          </label>
           <br>
-          <label>
-              Kortanúmer:
+          <h3>Kortanúmer:</h3>
+              <input name="kortanr" type="number" required placeholder="5999-9999-9999-9999">
               <br>
-              <input name="kortanr" type="kortanr" required placeholder="5999-9999-9999-9999">
               <br>
-          </label>
-          <br>
-          <label for="Gildistími">
-            Gildistími:
-            <br>
-            <label for="mán">Mán</label>
-            <select id="mán">
+            <h3>Gildistími:</h3>
+            <label for="Gildistími">Mán</label>
+            <select id="Gildistími">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -119,22 +110,19 @@
               <option>11</option>
               <option>12</option>
             </select>
-            <label for="ár">Ár</label>
-            <select id="ár">
+            <label for="Gildistími">Ár</label>
+            <select id="Gildistími">
               <option>2017</option>
               <option>2018</option>
               <option>2019</option>
               <option>2020</option>
             </select>
-          </label>
           </fieldset>
         </div>
       </div>
     </div>
 
-
     <button class="button button--nedri">Panta</button>
-    </form>
     <footer class="yfirfooter">
         <div class="undirfooter">
            <ul class="leftlist">
@@ -155,3 +143,4 @@
      </footer>
   </body>
 </html>
+
