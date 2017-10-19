@@ -1,0 +1,62 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  max-width: 128px;
+  padding: 10px 5px;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-size: 2rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 3px;
+  transition: background-color 500ms ease;
+
+  &:hover {
+    color: #eee;
+    background-color: #333;
+  }
+
+  &--inverted {
+    color: #666;
+    background-color: #eee;
+  }
+
+  &--inverted:hover {
+    color: #333;
+    background-color: #ccc;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: #999;
+    background-color: #eee;
+    border-color: #eee;
+  }
+}
+
+.small {
+  max-width: 4em;
+  height: auto;
+  padding: 0.3em 0;
+  margin: auto;
+  margin-right: 0.5em;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.long {
+  max-width: 7em;
+  height: 2em;
+}
+
+.topright {
+  float: right;
+  margin-right: 2.5em;
+}

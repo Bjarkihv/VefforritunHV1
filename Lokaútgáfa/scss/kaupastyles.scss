@@ -1,0 +1,239 @@
+/* setjum box-sizing: border-box; á allt */
+html {
+  font-family: "Open Sans";
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 1em;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+  /* fjarlÃ¦gjum margin og padding */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  margin: 40px;
+}
+
+div p {
+  font-family: Roboto Slab;
+  font-size: 1.5em;
+}
+
+div {
+  display: block;
+}
+
+.cardlist__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: -100px;
+}
+.cardlist__col {
+  width: 100%;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 0 20px; }
+  @media (min-width: 600px) {
+    .cardlist__col {
+      width: 50%;
+      margin-right: 0;
+      margin-left: 0; } }
+
+fieldset {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header {
+  height: 4.5em;
+  margin: 0 auto;
+  font-family: "Roboto Slab";
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  background-color: black;
+  font-style: italic;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+select {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+p.Foo{
+  font-size: 2em;
+  margin-left: 1em;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  background-color: #333;
+  border-color: #000;
+  max-width: 4em;
+  border-radius: 4px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #eee;
+  text-align: center;
+  margin-top: 0.7em;
+}
+
+.button--kaupa {
+  float: right;
+  background-color: #667;
+  font-size: 1.5em;
+  padding-right: 3em;
+  margin-right: 1em;
+}
+
+.button--um {
+  float: right;
+  font-size: 1.5em;
+  text-align: center;
+  padding-right: 3em;
+  margin-right: 1em;
+  background-color: inherit;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow-x: hidden;
+
+}
+
+.button--nedri {
+  align-content: center;
+  justify-content: center;
+  margin-left: 450px;
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 70px;
+  margin-top: -10px;
+  height: 35px;
+}
+
+.efrihluti {
+  width: 100%;
+  max-width: 1200px;
+  font-family: "Open Sans";
+  height: 30em;
+  margin-bottom: 2em;
+  background: transparent url(bg-subpage.jpg)  50% 50%;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+div.prufa {
+  width: 100%;
+}
+
+h1 {
+  padding-top: 15%;
+  white-space: pre-line;
+  word-wrap: break-word;
+  width: 100%;
+  font-family: "Roboto Slab";
+  font-size: 4em;
+  color:white;
+}
+
+fieldset {
+    border: 0 none;
+    font-size: 1em;
+}
+
+blockquote {
+  width: 50%;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.3em;
+  font-style: italic;
+
+}
+
+blockquote cite{
+  display: block;
+  font-size: 0.5em;
+}
+
+@media (max-width: 400px) {
+  div.blandast {
+    display: block;
+    align-items: center;
+  }
+
+  blockquote {
+    width: 100%;
+  }
+
+  div p.floatleft {
+    width: 100%;
+  }
+
+}
+
+.yfirfooter {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #373737;
+  color: #fff;
+  text-align: center;
+}
+
+ .undirfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #373737;
+  color: #fff;
+}
+
+ul {
+  width: 20%;
+  margin-top: 1em;
+  display: block;
+  list-style: none;
+  padding-bottom: 1em;
+}
+
+.leftlist {
+  align-items: right;
+}
+
+.rightlist {
+  align-items: left;
+}
+
+footer p {
+  border-top: 2px solid #fff;
+  padding: 1em;
+  color: #868686;
+}

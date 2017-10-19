@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <title>Kaupa</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i|Raleway:400,700" rel="stylesheet" >-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="kaupastyles.css">
+  </head>
+  <body>
+  <header>
+    <div>
+      <a href="kaupa.html"><button class="button button--kaupa">Kaupa</button></a>
+      <a href="um.html"><button class="button button--um">Um</button></a>
+      <p class = "Foo"><strong>Fooþjónustan</strong></p>
+    </div>
+  </header>
+  <main>
+    <div class = "efrihluti">
+    <div class ="prufa">
+      <h1>Kaupa</h1>
+    </div>
+    </div>
+  </main>
+
+    <div class="cardlist">
+      <div class="cardlist__row">
+        <div class="cardlist__col">
+          <fieldset>
+          <p> Persónuupplýsingar</p>
+          <br>
+          <form>
+            <h3>Nafn:</h3>
+              <br>
+              <input name="name" type="text" required>
+          </form>
+            <br>
+            <h3>Kennitala:</h3>
+              <br>
+              <input name="kt" type="text" placeholder="123456-7890">
+              <br>
+              <br>
+              <form>
+              <h3>Kyn:</h3> <br>
+              <div>
+                <input type="radio" id="Karl"
+                 name="kyn" value="Karl">
+                <label for="Karl">Karl</label> <br>
+
+                <input type="radio" id="Kona"
+                 name="kyn" value="Kona">
+                <label for="Kona">Kona</label> <br>
+
+                <input type="radio" id="Annað"
+                 name="kyn" value="Annað">
+                <label for="Annað">Annað</label>
+              </div>
+
+            </form>
+              <br>
+              <br>
+            <h3>Símanúmer:</h3><br>
+              <input name="name" type="text" required placeholder="+354 812 3456">
+            <br>
+            <br>
+            <h3>Heimilisfang:</h3>
+              <br>
+              <input name="name" type="text" required>
+            <br>
+            <br>
+            <h3>Skrá mig á póstlista</h3>
+              <input type="checkbox" checked>
+          </fieldset>
+      </div>
+
+    <div class="cardlist__col">
+        <fieldset>
+          <p>Greiðsluupplýsingar</p>
+          <br>
+          <div id="greidsla"><h3>Greiða með:</h3>
+          <select id="greidsla">
+            <option>Kreditkorti</option>
+            <option>Millifærslu</option>
+            <option>Reiðufé</option>
+          </select>
+          </div>
+          <br>
+          <br>
+          <h3>Nafn á korti:</h3>
+            <input name="korthafi" type="text" required>
+            <br>
+          <br>
+          <h3>Kortanúmer:</h3>
+              <input name="kortanr" type="number" required placeholder="5999-9999-9999-9999">
+              <br>
+              <br>
+            <h3>Gildistími:</h3>
+            <label for="Gildistími">Mán</label>
+            <select id="Gildistími">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <label for="Gildistími">Ár</label>
+            <select id="Gildistími">
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+            </select>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <button class="button button--nedri">Panta</button>
+    <footer class="yfirfooter">
+        <div class="undirfooter">
+           <ul class="leftlist">
+              <li>
+                 Fooþjónustan
+              </li>
+              <li>
+                 123-4567
+              </li>
+           </ul>
+           <ul class = "rightlist">
+              <li> Opið 12-13 alla daga</li>
+              <li> Bargata 1</li>
+              <li> 900 Foobar</li>
+           </ul>
+        </div>
+        <p>© Fooþjónustan 2017</p>
+     </footer>
+  </body>
+</html>
