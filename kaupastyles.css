@@ -120,7 +120,7 @@ main {
 
 }
 
-div.efrihluti {
+.efrihluti {
   width: 100%;
   max-width: 1200px;
   font-family: "Open Sans";
@@ -145,24 +145,9 @@ h1{
   color:white;
 }
 
-section.mainstuff {
-  margin-top: 1em;
-  font-family: "Open Sans";
-}
-
 fieldset {
     border: 0 none;
-}
-
-
-section.mainstuff p{
-  padding: 1em;
-}
-
-div.blandast {
-  width: 100%;
-  display: inline-flex;
-  flex-direction: row-reverse;
+    font-size: 1em;
 }
 
 blockquote {
@@ -179,9 +164,7 @@ blockquote cite{
   font-size: 0.5em;
 }
 
-div p.floatleft{
-  width: 50%;
-}
+
 @media (max-width: 400px) {
   div.blandast{
     display: block;
@@ -195,53 +178,40 @@ div p.floatleft{
     width: 100%;
   }
 }
-section.yfirfooter {
+.yfirfooter {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #373737;
+  color: #fff;
+  text-align: center;
+}
+ .undirfooter {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
+  justify-content: center;
   height: 100%;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #373737;
   color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
-
-ul{
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+ul {
+  width: 20%;
   margin-top: 1em;
   display: block;
-
-}
-ul.leftlist{
-  align-self: center;
-}
-ul.rightlist{
-  align-self: center;
-}
-li{
-
   list-style: none;
+  padding-bottom: 1em;
 }
-@media (max-width 400px) {
-
+.leftlist{
+  align-items: right;
 }
-footer{
-  display: block;
-  padding: 2em;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-  background-color: #373737;
-  color: #fff;
-  text-align: center;
+.rightlist{
+  align-items: left;
 }
 footer p {
   border-top: 2px solid #fff;
   padding: 1em;
+  color: #868686;
 }
